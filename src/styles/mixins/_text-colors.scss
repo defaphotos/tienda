@@ -1,0 +1,8 @@
+/** Generate color modifier based on color scheme **/
+@mixin text-colors {
+  @each $name, $color in $site-colors {
+    &--cl-#{$color}{
+      color: $color;
+    }
+  }
+}
